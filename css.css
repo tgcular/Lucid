@@ -10,67 +10,92 @@ body{
   overflow: auto;
 
 
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.596), rgba(0, 0, 0, 0.822)), url("background.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.348), rgba(0, 0, 0, 0.655)), url("bgnew.gif");
+  
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; 
   background-color: rgba(0, 0, 0, 0.774);
+  font-family: "Google Sans", sans-serif;
+
+  background-color: #0f172a;
 
   
 }
-
-
 
 .container{
-  height: 100vh;
+  min-height: 100vh;
+
 }
 
-.header{
-  background-color: rgba(0, 0, 0, 0.849);
-  display: flex;
-  flex-direction: row;
-  padding: 2vh;
 
-
-  color: white;
-  font-family: "Google Sans", sans-serif;
-  font-weight: bold;
-  position: fixed;
+nav{
   width: 100%;
+  padding: 1rem 5%;
+  background-color: #060a13;
+  border-bottom: solid 4px rgb(235, 190, 10);
+  backdrop-filter: blur(15px);
+  margin-bottom: 2rem;
+  box-shadow: 0 0 20px rgb(220, 151, 2);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.logo{
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: rgb(235, 190, 10);
+  letter-spacing: 1px;
+}
+
+.nav-links{
+  list-style: none;
+  display: flex;
+  gap: 2rem;
   
-
-  
 }
 
-.headerbutton{
-  height: 100%;
+.nav-links li a{
+  position: relative;
+  font-size: 1.05rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s;
 }
 
-.headerbutton:hover{
-  background-color: rgba(77, 77, 77, 0.582);
+.nav-links li a:hover{
+  color: rgb(235, 190, 10);
+  text-shadow: 0 0 10px rgb(220, 151, 2);
 }
 
-#title{
-  width: 20%;
-  
-  
+.btns{
+  display: flex;
+
 }
 
-#spacing{
-  width: 60%;
+.btn{
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  background:rgb(235, 190, 10);
+  color: white;
+  text-shadow: 0 0 15px black;
+  box-shadow: 0 0 15px rgb(220, 151, 2);
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
-#collection{
-  width: 10%;
-  text-align: center;
+.btn:hover{
+  background-color: rgba(255, 246, 201, 0.866);
+  box-shadow: 0 0 25px rgb(253, 202, 33);
 }
-
-#settings{
-  width: 10%;
-  text-align: center;
-}
-
 
 
 .titlebar{
@@ -80,6 +105,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 
     font-family: "PT Serif Caption", serif;
 
@@ -100,26 +126,11 @@ body{
   font-weight: lighter;
 }
 
-.addarea{
-  padding: 1rem;
+
+.homebuttons{
+  margin-top: 15px;
 }
 
-.addentry{
-  font-weight: bold;
-  padding: 12px 35px;
-  font-size: 0.9rem;
-  border-radius: 50px;
-  border: none;
-  box-shadow: 0px 0px 30px rgb(0, 0, 0);
-  
-
-  background-color: rgb(0, 162, 255);
-  color: white;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.699);
-  
-}
-
-.addentry:hover{
-  background-color: rgb(106, 194, 245);
-  cursor: pointer;
+#addnew{
+  padding: 0.7rem 1.5rem;
 }
