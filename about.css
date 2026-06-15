@@ -1,0 +1,62 @@
+.content{
+
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.profiles{
+  list-style: none;
+}
+
+.profile{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.imgcontainer{
+
+  padding-top: 50px;
+
+    
+}
+
+.profilepic{
+  width: 200px; 
+  height: auto;
+  box-shadow: 0px 0px 20px rgb(0, 0, 0);
+  border-radius: 10px;
+  transition: 0.2s;
+  
+}
+
+.profilepic:hover{
+
+  border: solid 3px rgb(246, 169, 15);
+  box-shadow: 0px 0px 20px rgb(251, 158, 9);
+  width: 205px;
+  height: auto;
+
+}
+
+.namecontainer{
+  
+  margin-top: 10px;
+  font-weight: bolder;
+  font-size: 1.3rem;
+
+}
+
+.descriptioncontainer{
+
+  font-weight: lighter;
+  font-size: 0.9rem;
+
+}
